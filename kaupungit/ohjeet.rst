@@ -211,8 +211,8 @@ asteita. Käytä ratkaisussasi math-kirjaston funktioita, testiohjelma ei
 lataa esim. numpyä.
 
 .. figure:: kuvat/kaavat.png
-   :scale: 200 %
-   :alt: kaavat etäisyyden laskemiseen isoympyrän avulla
+  :scale: 200 %
+  :alt: kaavat etäisyyden laskemiseen isoympyrän avulla
 
 Miten voin testata tehtävien toimivuutta?
 
