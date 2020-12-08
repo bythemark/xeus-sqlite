@@ -129,6 +129,11 @@ valita väkimäärän perusteella on lisätä hakukomentoon
 ``ORDER BY populaatio DESC`` eli järjestä laskevasti väkimäärän
 mukaan. Tällöin suurin kaupunki on listassa ensimmäinen.
 
+
+
+Tehtävä 2: Tietojen päivittäminen
+---------------------------------
+
 Merkistöistä
 ............
 
@@ -140,10 +145,7 @@ Python 3:ssa se onnistuu lisäämällä määre **encoding** esimerkiksi seuraav
 .. code-block:: python
 
   f = open(filename, 'r', encoding='utf-8')
-
-Tehtävä 2: Tietojen päivittäminen
----------------------------------
-
+  
 Tehtäväpaketin mukana tulee tiedosto *suomen_suurimpien_kuntien_asukasluvut.txt*, jossa on listattuna Suomen suurimpien kuntien asukaslukuja.
 Tehtävänäsi on tiedostoa hyödyntämällä päivittää kaupunkien asukasluvut. Jos tiedostossa olevaa kaupunkia ei löydy tietokannasta, ohita kyseinen kaupunki.
 Älä kuitenkaan luo uutta kaupunkia tietokantaan. 
