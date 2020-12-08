@@ -224,7 +224,11 @@ Etäisyys isoympyrällä:
 
   $$b = \alpha * R$$
 
+.. math::
 
+  $$b = \alpha * R$$
+
+The area of a circle is :math:`A_\text{c} = (\pi/4) d^2`.
 
 Miten voin testata tehtävien toimivuutta?
 
