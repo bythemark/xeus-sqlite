@@ -213,20 +213,16 @@ lataa esim. numpyä.
 **Huom.** Älä kopioi kaavoja suoraan, sillä mukaan tulee ylimääräisiä `tulostumattomia merkkejä <https://fi.wikipedia.org/wiki/Tulostumaton_merkki>`_,
 jolloin python-tulkki valittaa `syntax-errorista <https://docs.python.org/3.6/library/exceptions.html#SyntaxError>`_.
 
-.. math::
-
-   \\frac{ \sum_{t=0}^{N}f(t,k) }{N}
-
 Kulma isoympyrällä:
 
 .. math::
-  \alpha = \arccos(\sin(lat1) * \sin(lat2) + \cos(lat1) * cos(lat2) * cos(lon2-lon1))
+  $\alpha = \arccos(\sin(lat1) * \sin(lat2) + \cos(lat1) * cos(lat2) * cos(lon2-lon1))$
 
 Etäisyys isoympyrällä:
 
 .. math::
 
-  b = \alpha * R
+  $$b = \alpha * R$$
 
 
 
