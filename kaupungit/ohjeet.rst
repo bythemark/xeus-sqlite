@@ -213,22 +213,7 @@ lataa esim. numpyä.
 **Huom.** Älä kopioi kaavoja suoraan, sillä mukaan tulee ylimääräisiä `tulostumattomia merkkejä <https://fi.wikipedia.org/wiki/Tulostumaton_merkki>`_,
 jolloin python-tulkki valittaa `syntax-errorista <https://docs.python.org/3.6/library/exceptions.html#SyntaxError>`_.
 
-Kulma isoympyrällä:
-
-.. math::
-  $\alpha = \arccos(\sin(lat1) * \sin(lat2) + \cos(lat1) * cos(lat2) * cos(lon2-lon1))$
-
-Etäisyys isoympyrällä:
-
-.. math::
-
-  $$b = \alpha * R$$
-
-.. math::
-
-  $$b = \alpha * R$$
-
-The area of a circle is :math:`A_\text{c} = (\pi/4) d^2`.
+kuvat/kaava.jpg
 
 Miten voin testata tehtävien toimivuutta?
 
