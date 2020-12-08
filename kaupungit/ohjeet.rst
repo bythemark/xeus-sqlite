@@ -86,15 +86,10 @@ Saat nykyisen polun selville komennolla **pwd**:
     jovyan@jupyter-bythemark-2dxeus-2dsqlite-2dhrsbbmyq:~/kaupungit/teht1$ pwd
     /home/jovyan/kaupungit/teht1
 
-
-
-.. figure:: kuvat/SQL_python_korjaus.png
-
-
 Toinen vaihtoehto on siirtää tietokanta samaan kansioon kuin ajettava python-tiedosto.
 
-Tietokanta luodaan automaattisesti, jos sitä ei löydy. Tietokanta on tällöin tyhjä, joten vaikka näyttäisi siltä, että
-tietokanta on oikeassa paikassa, se ei toimi.
+Huom! Tietokanta luodaan automaattisesti, jos sitä ei löydy. Tietokanta on tällöin tyhjä, 
+joten vaikka näyttäisi siltä, että tietokanta on oikeassa paikassa, se ei toimi.
 
   .. figure:: kuvat/tyhja_tietokanta.png
 
