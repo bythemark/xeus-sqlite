@@ -5,7 +5,7 @@ Pääkysymys:
     Miten hallita SQL-tietokantaa Python-ohjelmasta?
 
 Mitä käsitellään?
-    SQLite modulia.
+    Python modulia nimelä sqlite.
     
 Mitä sinun oletetaan tekevän?
     Lue ohjeet ja tee tehtävät.
