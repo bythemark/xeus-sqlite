@@ -207,8 +207,8 @@ että samannimisistä kaupungeista halutaan se, jolla on suurin asukasluku.
 isoympyrän kulman avulla. Pisteiden ``(lon1,lat1)`` ja
 ``(lon2,lat2)`` väliselle etäisyydelle saadaan seuraavat yhtälöt, jos
 Maapallon säde on R. Muista pohtia, oletko käyttämässä radiaaneja vai
-asteita. Käytä ratkaisussasi math-kirjaston funktioita, tarkistin ei
-hyväksy numpyä.
+asteita. Käytä ratkaisussasi math-kirjaston funktioita, testiohjelma ei
+lataa esim. numpyä.
 
 **Huom.** Älä kopioi kaavoja suoraan, sillä mukaan tulee ylimääräisiä `tulostumattomia merkkejä <https://fi.wikipedia.org/wiki/Tulostumaton_merkki>`_,
 jolloin python-tulkki valittaa `syntax-errorista <https://docs.python.org/3.6/library/exceptions.html#SyntaxError>`_.
