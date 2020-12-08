@@ -74,7 +74,6 @@ Jos seuraavissa tehtävissä konsoliin tulostuu virheilmoitus, jossa kerrotaan, 
 kannattaa antaa main()-funktion *tietokanta*-muuttujaan koko tiedostopolku, jossa tietokanta sijaitsee.
 Saat polun selville komennolla **pwd**:
 
-.. raw:: latex
 
     jovyan@jupyter-bythemark-2dxeus-2dsqlite-2dhrsbbmyq:~/kaupungit/teht1$ python kaupunkihaku.py
     Path at terminal when executing this file
@@ -94,7 +93,7 @@ Saat polun selville komennolla **pwd**:
     jovyan@jupyter-bythemark-2dxeus-2dsqlite-2dhrsbbmyq:~/kaupungit/teht1$
 
 
-  .. figure:: kuvat/SQL_python_korjaus.png
+.. figure:: kuvat/SQL_python_korjaus.png
 
 
 Toinen vaihtoehto on siirtää tietokanta samaan kansioon kuin ajettava python-tiedosto.
