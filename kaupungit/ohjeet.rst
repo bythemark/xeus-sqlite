@@ -213,7 +213,8 @@ lataa esim. numpyä.
 **Huom.** Älä kopioi kaavoja suoraan, sillä mukaan tulee ylimääräisiä `tulostumattomia merkkejä <https://fi.wikipedia.org/wiki/Tulostumaton_merkki>`_,
 jolloin python-tulkki valittaa `syntax-errorista <https://docs.python.org/3.6/library/exceptions.html#SyntaxError>`_.
 
-.. image:: kuvat\kaavat.jpg
+  .. figure:: kuvat/kaavat.png
+
 
 Miten voin testata tehtävien toimivuutta?
 
