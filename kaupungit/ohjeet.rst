@@ -71,16 +71,7 @@ Vihjeitä
 ........
 
 Jos seuraavissa tehtävissä konsoliin tulostuu virheilmoitus, jossa kerrotaan, että tietokantaa tai jotain taulua ei löydy,
-kannattaa antaa main()-funktion *tietokanta*-muuttujaan koko tiedostopolku, jossa tietokanta sijaitsee.
-Saat polun selville komennolla **pwd**:
 
-
-    jovyan@jupyter-bythemark-2dxeus-2dsqlite-2dhrsbbmyq:~/kaupungit/teht1$ python kaupunkihaku.py
-    Path at terminal when executing this file
-    /home/jovyan/kaupungit/teht1
-
-    Ohjelma hakee kaupungin tietokannasta 'kaupungit.db'.
-    Kaupungin nimi:Helsinki
     Traceback (most recent call last):
       File "kaupunkihaku.py", line 56, in <module>
         main()
@@ -88,9 +79,13 @@ Saat polun selville komennolla **pwd**:
         queryresult = find_city_by_name(inputstring, tietokanta)
       File "kaupunkihaku.py", line 14, in find_city_by_name    c.execute(sqlitecommand, [city_name])
     sqlite3.OperationalError: no such table: kaupungit
+    
+kannattaa antaa main()-funktion *tietokanta*-muuttujaan koko tiedostopolku, jossa tietokanta sijaitsee.
+Saat nykyisen polun selville komennolla **pwd**:
+
     jovyan@jupyter-bythemark-2dxeus-2dsqlite-2dhrsbbmyq:~/kaupungit/teht1$ pwd
     /home/jovyan/kaupungit/teht1
-    jovyan@jupyter-bythemark-2dxeus-2dsqlite-2dhrsbbmyq:~/kaupungit/teht1$
+
 
 
 .. figure:: kuvat/SQL_python_korjaus.png
