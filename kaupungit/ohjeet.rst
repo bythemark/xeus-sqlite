@@ -69,6 +69,22 @@ Kanta avataan komennolla 'connect':
 
   conn = sqlite3.connect("tietokanta.db")
 
+Lisäksi tarvitaan ns. tietokantakursori, joka tässä yhteydessä antaa tietokannalle käskyjä ja 
+vastaanottaa siltä tietoa:
+
+.. code-block:: python
+
+  c = conn.cursor()
+  
+Nyt voitaisiin suorttaa esimerkiksi seuraavanlainen SQL-komento c.execute()-metodilla:
+
+.. code-block:: python
+
+  c.execute("SELECT * FROM kaupungit")
+  c.execute(’’’
+        SELECT COUNT(*) FROM kaupungit
+        ’’’)
+
 
 Vihjeitä
 ........
@@ -116,6 +132,9 @@ Saat kaikki komennon palauttamat tietueet talteen komennolla
 .. code-block:: python
 
   tietueet = c.fetchall()  #palauttaa kaikki c.excecute()-komennon palauttamat tietueet listana
+
+
+
 
 
 Tehtävä 1: Kaupunkihaku
