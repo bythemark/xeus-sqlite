@@ -69,7 +69,8 @@ Kanta avataan komennolla 'connect':
 
   conn = sqlite3.connect("tietokanta.db")
 
-Lisäksi tarvitaan ns. tietokantakursori, joka tässä yhteydessä antaa tietokannalle käskyjä ja 
+
+Lisäksi tarvitaan ns. tietokantakursori, joka tässä yhteydessä antaa tietokannalle komentoja ja 
 vastaanottaa siltä tietoa:
 
 .. code-block:: python
@@ -80,10 +81,32 @@ Nyt voitaisiin suorttaa esimerkiksi seuraavanlainen SQL-komento c.execute()-meto
 
 .. code-block:: python
 
-  c.execute("SELECT * FROM kaupungit")
-  c.execute(’’’
-        SELECT COUNT(*) FROM kaupungit
-        ’’’)
+  command = 'SELECT COUNT(*) FROM kaupungit'
+  c.execute(command)
+
+Komentoja on helppo formatoida, jolloin osa komennon parametreista voidaan määritellä muuttujissa. 
+Kysymysmerkit korvataan annetulla listalla muuttujia samassa järjestyksessä. 
+
+.. code-block:: python
+    
+    c.execute("""INSERT INTO kaupungit(nimi, alue, valtio, populaatio, lat, lon)
+                 VALUES(?,?,?,?,?,?)""",
+                 [nimi, alue, valtio, populaatio, lat, lon])
+
+Jos tietokantaan tehdään muutoksia (UPDATE, INSERT, DELETE), ne täytyy vielä kommitoida. Lisäksi
+on hyvä tapa aina sulkea tietokanta lopuksi. Päivitykset on hyvä tehdä try-lohkossa, jonka 
+päätteeksi tietokanta suljetaan. 
+
+.. code-block:: python
+  
+    try:
+        # Päivitetaan tiedot
+        c.execute("UPDATE kaupungit SET populaatio = ? WHERE nimi = ?", [635181, "Helsinki"])
+        # Tallennetaan tehdyt muutokset tietokantaan
+        conn.commit()
+
+    finally:
+        conn.close()
 
 
 Vihjeitä
