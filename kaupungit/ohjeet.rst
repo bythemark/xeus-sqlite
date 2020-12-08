@@ -200,8 +200,7 @@ Tehtävä 3: Kahden kaupungin etäisyys
 
 Tee Python-ohjelma, joka etsii kaksi kaupunkia tietokannasta
 nimen perusteella ja laskee niiden välisen etäisyyden. Voit käyttää
-apunasi viidennessä tehtävässä tekemääsi kaupunkihakua. (Säilytä
-kuitenkin toimiva kopio tehtävästä 5 tarkistusta varten!) Huomioi jälleen,
+apunasi edellä tehtyä kaupunkihakua. Huomioi,
 että samannimisistä kaupungeista halutaan se, jolla on suurin asukasluku.
 
 **Vihje.** \ Etäisyys koordinaattien välillä kannattaa laskea
