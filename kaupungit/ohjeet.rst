@@ -54,18 +54,21 @@ Ennen tehtävien aloittamista kannattaa tutkia tietokannan tietoja. Missä muodo
 +----------------------------------------------------+
 
 
-Ohjeet
-------
+SQL-kutsut Python-ohjelmassa
+----------------------------
 
-Itsenäinen tiedon haku
-......................
+Python-ohjelmista voidaan suorittaa SQLite-tietokannan komentoja lataamalla kirjasto sqlite3:
 
-SQL on paljon laajempi kyselykieli kuin mitä tällä kurssilla on mahdollista syvällisemmin käydä läpi.
-Harjoitukissa on kuitenkin tarkoitus saada yleiskuva kielen laajuudesta ja opetella ongelmanratkaisua.
-Siksi tällä kierroksella on tehtäviä, joihin tulee etsiä
-oikeat komennot itse ja joita ei pikaoppaastamme löydy.
-Käytä esim. jo aikaisemmin mainittua referenssimanuaalia,
-joka löytyy osoitteesta `w3schools.com <http://www.w3schools.com/sql/default.asp>`__.
+.. code-block:: python
+
+  import sqlite3
+
+Kanta avataan komennolla 'connect':
+
+.. code-block:: python
+
+  conn = sqlite3.connect("tietokanta.db")
+
 
 Vihjeitä
 ........
