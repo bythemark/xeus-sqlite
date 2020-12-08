@@ -210,11 +210,9 @@ Maapallon säde on R. Muista pohtia, oletko käyttämässä radiaaneja vai
 asteita. Käytä ratkaisussasi math-kirjaston funktioita, testiohjelma ei
 lataa esim. numpyä.
 
-**Huom.** Älä kopioi kaavoja suoraan, sillä mukaan tulee ylimääräisiä `tulostumattomia merkkejä <https://fi.wikipedia.org/wiki/Tulostumaton_merkki>`_,
-jolloin python-tulkki valittaa `syntax-errorista <https://docs.python.org/3.6/library/exceptions.html#SyntaxError>`_.
-
 .. figure:: kuvat/kaavat.png
-
+   :scale: 150 %
+   :alt: kaavat etäisyyden laskemiseen isoympyrän avulla
 
 Miten voin testata tehtävien toimivuutta?
 
